@@ -1,0 +1,132 @@
+Q1.
+
+function position(str) 
+{
+    var e=0;
+    var o=0;
+    var a=str.toString();
+    var l=a.length;
+    for(var i=1;i<=l;i++)
+    {
+        if(i%2===0)
+        {
+        e=e+parseInt(a.charAt(i));
+        }
+    else
+        {
+        o=o+parseInt(a.charAt(i));
+        }
+    }
+    console.log('Even place',o);
+    console.log('Odd place',e);
+}
+undefined
+position(291456);
+Even place 19
+Odd place 8
+
+
+
+
+
+
+
+Q2
+var s=prompt('enter string');
+function convert() {
+    str=" "+str;
+    str=str.toLowerCase();
+    var l=str.length;
+    var p='';
+    for(i=0;i<l;i++)
+        {
+        var ch=s.charAt(i);
+        if(ch==' '){
+            p=p+' ';
+            p=p+str.charAt(i+1).toUpperCase();
+            i++;
+        }
+            else{
+                p=p+ch;
+            }
+        }
+    console.log(p);
+}
+undefined
+convert();
+Hy I Am Dhruv Ruhela
+
+
+
+
+
+
+
+Q3
+function checks(n=0) {
+    n=n.toString();
+    if(n.length ==10){
+        for(i=0;i<n.length;i++){
+            if(!parseInt(n.charAt(i))){
+                return 'false';
+            }
+        }
+        return 'true';
+    }return 'false';
+}
+undefined
+checks(9312567844);
+'true'
+checks(124567898);
+'false'
+
+
+
+
+
+
+
+Q4
+
+function checks(e='') {
+    if(e.includes('@')){
+        if(e.includes('.com') || e.includes('.org') || e.includes('.edu')){
+            return 'ACCEPT';
+        }
+        else return "REJECT";
+    }return 'REJECT';
+}
+undefined
+checks('barinmentors@.com')
+'valid'
+
+
+
+
+
+
+
+Q5
+function count(s='') {
+    for(i=0;i<s.length;i++)
+        {
+            var c=0;
+            for(j=0;j<s.length;j++){
+                if(s.charAt(i)==s.charAt(j)){
+                    c++;
+                }
+            }
+            console.log(s.charAt(i) , c);
+        }
+}
+undefined
+count('brainmentors');
+b 1
+r 2
+a 1
+i 1
+n 2
+m 1
+e 1
+t 1
+o 1
