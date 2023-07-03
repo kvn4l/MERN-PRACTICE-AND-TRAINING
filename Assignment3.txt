@@ -1,0 +1,99 @@
+Q1.
+function calculate(num1, num2, operation){
+    num1=prompt("enter the number");
+    num2=prompt("enter the number");
+    operation=prompt("enter the number");
+    var add=function(n1,n2){
+        return n1+n2;
+    }
+    var sub=function(n1,n2){
+        return n1-n2;
+    }
+    var mul=function(n1,n2){
+        return n1*n2;
+    }
+    var div=function(n1,n2){
+        return n1/n2;
+    }
+    var operations={
+        1: add,
+        2: sub,
+        3: mul,
+        4: div }
+    return operations[operation](num1, num2)}
+
+
+
+
+
+Q2.
+function Triangle(){
+    var a=prompt("enter first side");
+    var b=prompt("enter second side");
+    var c=prompt("enter third side");
+    var d=0;
+    if(a==b & b==c){
+        return d=1;
+    }
+    else{
+       return d=0;}
+}
+function area(d,Traingle){
+    if(d==1){
+        console.log("true");
+    }
+    else{
+        console.log("false")
+    }
+}
+
+
+
+
+
+Q3.
+function check(str1,str2){
+    var check=0;
+    if(str1.length==str2.length){
+        for(i=0;i<str1.length;i++){
+            for(j=0;j<str1.length;j++){
+            if(str1[i]==str2[j]){check=1}
+                else{check=0;}
+                
+            }}}
+    else{check=0;}
+    if(check==1){console.log("true")
+                }
+    else{console.log("false")}
+}
+
+
+
+
+
+
+
+Q4.
+Compute HRA, DA, TA, GS, NS.*/
+function employee(n='',s=0) {
+    var h=0.30*s;
+    var d=0.10*s;
+    var t=0.20*s;
+    var g=s+h+d+t;
+    var nus=g-(0.10*g);
+    console.log(n +": hra = "+h+', ds ='+d+',ta='+t+',gs='+g+',ns='+nus);
+}
+undefined
+employee('Sanjeev',100);
+VM1549:10 Sanjeev: hra = 30, ds =10,ta=20,gs=160,ns=144
+
+
+
+
+
+Q5.
+var array=[10,3,15,-1,9,6];
+var min=Math.min(...array);
+var max=Math.max(...array);
+console.log(max);
+console.log(min);
